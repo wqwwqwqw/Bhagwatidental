@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhagwati Dental Clinic | Best Dentist in Haridwar | Dental Implants & Smile Design</title>
+    <meta name="description" content="Bhagwati Dental Clinic in Haridwar offers advanced dental treatments including implants, root canals, smile design & more. Book your appointment today.">
+    <meta name="keywords" content="dentist Haridwar, dental clinic, teeth whitening, dental implants, root canal treatment, smile design, best dentist near me">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary: #06b6d4;
+            --primary-dark: #0891b2;
+            --secondary: #3b82f6;
+            --light: #f8fafc;
+            --dark: #0f172a;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), 
+                        url('https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .testimonial-card {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 100;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary);
+        }
+        
+        .active {
+            color: var(--primary);
+            font-weight: 600;
+        }
+        
+        .before-after {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .before-after img {
+            transition: all 0.3s ease;
+        }
+        
+        .before-after:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/918126733498" target="_blank" class="bg-green-500 text-white p-4 rounded-full shadow-lg flex items-center justify-center hover:bg-green-600 transition">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="mr-2">
+                    <i class="fas fa-tooth text-2xl text-cyan-500"></i>
+                </div>
+                <a href="#" class="text-xl font-bold text-gray-800">
+                    <span class="text-cyan-500">Bhagwati</span> Dental Clinic
+                </a>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link text-gray-600 hover:text-cyan-500 transition">About</a>
+                <a href="#services" class="nav-link text-gray-600 hover:text-cyan-500 transition">Services</a>
+                <a href="#gallery" class="nav-link text-gray-600 hover:text-cyan-500 transition">Gallery</a>
+                <a href="#testimonials" class="nav-link text-gray-600 hover:text-cyan-500 transition">Testimonials</a>
+                <a href="#contact" class="nav-link text-gray-600 hover:text-cyan-500 transition">Contact</a>
+            </nav>
+            
+            <div class="hidden md:block">
+                <a href="#appointment" class="bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded-full transition shadow-md">
+                    Book Appointment
+                </a>
+            </div>
+            
+            <button class="md:hidden text-gray-600" id="menu-toggle">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white w-full py-4 px-4 shadow-md" id="mobile-menu">
+            <div class="flex flex-col space-y-4">
+                <a href="#" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link text-gray-600 hover:text-cyan-500 transition">About</a>
+                <a href="#services" class="nav-link text-gray-600 hover:text-cyan-500 transition">Services</a>
+                <a href="#gallery" class="nav-link text-gray-600 hover:text-cyan-500 transition">Gallery</a>
+                <a href="#testimonials" class="nav-link text-gray-600 hover:text-cyan-500 transition">Testimonials</a>
+                <a href="#contact" class="nav-link text-gray-600 hover:text-cyan-500 transition">Contact</a>
+                <a href="#appointment" class="bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded-full transition text-center">
+                    Book Appointment
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero py-20 md:py-32">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                    Your Trusted Dental Clinic for <span class="text-cyan-500">Healthy & Beautiful Smiles</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8">
+                    At Bhagwati Dental Clinic, we provide comprehensive dental care using advanced technology in a comfortable environment. Our expert team is dedicated to helping you achieve optimal oral health.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#appointment" class="bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-3 rounded-full text-center font-medium transition shadow-lg">
+                        Book Appointment
+                    </a>
+                    <a href="tel:08126733498" class="bg-white hover:bg-gray-100 text-cyan-500 border border-cyan-500 px-6 py-3 rounded-full text-center font-medium transition shadow-lg">
+                        <i class="fas fa-phone-alt mr-2"></i> Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">About Bhagwati Dental Clinic</h2>
+                <div class="w-20 h-1 bg-cyan-500 mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Dental Clinic Interior" class="rounded-lg shadow-lg w-full">
+                </div>
+                
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Our Mission</h3>
+                    <p class="text-gray-600 mb-6">
+                        To provide exceptional dental care through advanced technology, personalized treatment plans, and a compassionate approach that prioritizes patient comfort and satisfaction.
+                    </p>
+                    
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Why Choose Us?</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                        <div class="flex items-start">
+                            <div class="bg-cyan-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-check text-cyan-500"></i>
+                            </div>
+                            <p class="text-gray-600">Experienced dental professionals</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-cyan-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-check text-cyan-500"></i>
+                            </div>
+                            <p class="text-gray-600">State-of-the-art equipment</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-cyan-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-check text-cyan-500"></i>
+                            </div>
+                            <p class="text-gray-600">Pain-free treatment options</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-cyan-100 p-2 rounded-full mr-3">
+                                <i class="fas fa-check text-cyan-500"></i>
+                            </div>
+                            <p class="text-gray-600">Comprehensive dental solutions</p>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="inline-block bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-2 rounded-full transition">
+                        Visit Our Clinic
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Doctor Profile -->
+            <div class="mt-16 bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/3">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Dr. Abhishek Ashok Agrawal" class="w-full h-full object-cover">
+                    </div>
+                    <div class="md:w-2/3 p-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Dr. Abhishek Ashok Agrawal</h3>
+                        <p class="text-gray-500 mb-4">BDS (Nagpur), MDS (Pune)</p>
+                        <p class="text-gray-700 font-medium mb-4">Maxillofacial Prosthodontist & Implantologist</p>
+                        
+                        <div class="mb-6">
+                            <h4 class="text-lg font-semibold text-gray-800 mb-2">Specialties:</h4>
+                            <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                <li>Smile Designing</li>
+                                <li>Full Mouth Rehabilitation</li>
+                                <li>Dental Implants</li>
+                                <li>Cosmetic Dentistry</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-800 mb-2">Professional Memberships:</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Indian Prosthodontic Society (IPS)</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">International Team for Implantology (ITI)</span>
+                                <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Indian Dental Association (IDA)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Dental Services</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We offer comprehensive dental treatments using the latest technology to ensure the best care for your oral health.</p>
+                <div class="w-20 h-1 bg-cyan-500 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Dental Implants" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Dental Implants</h3>
+                        <p class="text-gray-600 mb-4">
+                            Permanent solution for missing teeth using titanium posts placed in the jawbone. Restores function and aesthetics naturally.
+                        </p>
+                        <a href="#" class="text-cyan-500 font-medium hover:text-cyan-600 transition flex items-center">
+                            Learn More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1622630998477-20aa696ecb05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Root Canal Treatment" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Root Canal Treatment</h3>
+                        <p class="text-gray-600 mb-4">
+                            Painless procedure to save infected teeth by removing damaged pulp and sealing the canal to prevent further infection.
+                        </p>
+                        <a href="#" class="text-cyan-500 font-medium hover:text-cyan-600 transition flex items-center">
+                            Learn More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1530026186672-2cd00ffc50fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Teeth Whitening" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Teeth Whitening</h3>
+                        <p class="text-gray-600 mb-4">
+                            Professional teeth whitening treatments to remove stains and discoloration for a brighter, more confident smile.
+                        </p>
+                        <a href="#" class="text-cyan-500 font-medium hover:text-cyan-600 transition flex items-center">
+                            Learn More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1622630998477-20aa696ecb05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Smile Designing" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Smile Designing</h3>
+                        <p class="text-gray-600 mb-4">
+                            Customized cosmetic dentistry to enhance your smile through veneers, crowns, whitening, and other aesthetic treatments.
+                        </p>
+                        <a href="#" class="text-cyan-500 font-medium hover:text-cyan-600 transition flex items-center">
+                            Learn More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Braces & Orthodontics" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Braces & Orthodontics</h3>
+                        <p class="text-gray-600 mb-4">
+                            Correct misaligned teeth and jaws with traditional braces, clear aligners, or other orthodontic solutions for all ages.
+                        </p>
+                        <a href="#" class="text-cyan-500 font-medium hover:text-cyan-600 transition flex items-center">
+                            Learn More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1622630998477-20aa696ecb05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Pediatric Dentistry" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Pediatric Dentistry</h3>
+                        <p class="text-gray-600 mb-4">
+                            Gentle dental care for children, including preventive treatments, sealants, fluoride applications, and habit counseling.
+                        </p>
+                        <a href="#" class="text-cyan-500 font-medium hover:text-cyan-600 transition flex items-center">
+                            Learn More <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-3 rounded-full transition font-medium">
+                    View All Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section id="appointment" class="py-16 bg-cyan-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-cyan-500 text-white p-8 flex flex-col justify-center">
+                        <h2 class="text-3xl font-bold mb-6">Book Your Appointment</h2>
+                        <p class="mb-6">
+                            Schedule your visit with our dental experts for personalized care and treatment.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div class="bg-white bg-opacity-20 p-2 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm opacity-80">Call us at</p>
+                                    <p class="font-semibold">081267 33498 / 01334 227772</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="bg-white bg-opacity-20 p-2 rounded-full mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm opacity-80">Email us at</p>
+                                    <p class="font-semibold">drtanugupta@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="bg-white bg-opacity-20 p-2 rounded-full mr-4">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm opacity-80">Opening Hours</p>
+                                    <p class="font-semibold">Mon-Sat: 10AM - 8PM | Sun: 10AM - 1PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2 p-8">
+                        <form id="appointment-form" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 mb-1">Full Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-gray-700 mb-1">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 mb-1">Email (Optional)</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500">
+                            </div>
+                            <div>
+                                <label for="service" class="block text-gray-700 mb-1">Service Required</label>
+                                <select id="service" name="service" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500">
+                                    <option value="">Select a service</option>
+                                    <option value="Dental Implants">Dental Implants</option>
+                                    <option value="Root Canal Treatment">Root Canal Treatment</option>
+                                    <option value="Teeth Whitening">Teeth Whitening</option>
+                                    <option value="Smile Designing">Smile Designing</option>
+                                    <option value="Braces & Orthodontics">Braces & Orthodontics</option>
+                                    <option value="Tooth Extraction">Tooth Extraction</option>
+                                    <option value="Dental Cleaning">Dental Cleaning & Scaling</option>
+                                    <option value="Pediatric Dentistry">Ped
+</html>
